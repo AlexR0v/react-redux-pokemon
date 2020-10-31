@@ -12,7 +12,7 @@ const Pokemon = (props) => {
   }, [dispatch, pokemonName])
 
   const ShowPokemon = () => {
-    if (pokemonData.data.length !== 0) {
+    if (Object.keys(pokemonData.data).length !== 0) {
       return (
         <div className={'pokemon-wrapper'}>
           <div className={'item'}>
